@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="PATH" value="./logs"></Property>
+        <Property name="FILE_NAME" value="api-log"></Property>
+        <Property name="LOG_PATTERN" value="%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ} %p %m%n"></Property>
+        <Property name="LOGGER_PATH" value="com.vmo.core"></Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %p %c{1.} [%t] %m%n"></PatternLayout>
+        </Console>
+        <RollingFile name="AsyncLogFile" fileName="${PATH}/${FILE_NAME}.log"
+                     filePattern="${PATH}/$${date:yyyy-MM}/${FILE_NAME}-%d{yyyy-MM-dd}-%i.log">
+
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="2048 MB"/>
+            </Policies>
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <DefaultRolloverStrategy max="1" />
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root>
+            <AppenderRef ref="Console"></AppenderRef>
+        </Root>
+        <Logger name="${LOGGER_PATH}" level="DEBUG" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="AsyncLogFile"/>
+        </Logger>
+    </Loggers>
+</Configuration>

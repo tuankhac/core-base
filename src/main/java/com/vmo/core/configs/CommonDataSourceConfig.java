@@ -13,8 +13,8 @@ import javax.annotation.PostConstruct;
 import javax.persistence.EntityManagerFactory;
 
 @Configuration
-@EntityScan(Constants.Links.MODELS_PACKAGE)
-@EnableJpaRepositories({Constants.Links.LOGGING_PACKAGE, Constants.Links.REPOSITORIES_PACKAGE})
+@EntityScan(Constants.MODELS_PACKAGE)
+@EnableJpaRepositories({Constants.LOGGING_PACKAGE, Constants.REPOSITORIES_PACKAGE})
 //, bootstrapMode = BootstrapMode.DEFERRED) //Constants.Links.LOGGING_PACKAGE
 public class CommonDataSourceConfig {
     public static final String SCHEMA_DBO = "dbo";

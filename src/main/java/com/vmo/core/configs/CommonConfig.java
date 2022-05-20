@@ -19,14 +19,14 @@ import org.springframework.context.annotation.Primary;
 @ConfigurationProperties(prefix = CommonConstants.CONFIG_PREFIX + ".common")
 //@EnableConfigurationProperties(CommonConfig.class)
 @ComponentScan({
-        Constants.Links.COMMON_PACKAGE,
-        Constants.Links.FILTERS_PACKAGE,
-        Constants.Links.MODULE_PACKAGE,
+        Constants.COMMON_PACKAGE,
+        Constants.FILTERS_PACKAGE,
+        Constants.MODULE_PACKAGE,
 //        Constants.Links.SERVICES_PACKAGE,
-        Constants.Links.MANAGERS_PACKAGE,
-        Constants.Links.REPOSITORIES_PACKAGE,
+        Constants.MANAGERS_PACKAGE,
+        Constants.REPOSITORIES_PACKAGE,
 //        Constants.Links.MODELS_PACKAGE,
-        Constants.Links.LOGGING_PACKAGE,
+        Constants.LOGGING_PACKAGE,
 })
 @Data
 public class CommonConfig {

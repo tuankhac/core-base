@@ -35,7 +35,7 @@ import javax.servlet.Filter;
 @Configuration
 @ConfigurationProperties(prefix = CommonConstants.CONFIG_PREFIX + ".security")
 //@EnableConfigurationProperties(SecurityConfig.class)
-@ComponentScan(Constants.Links.SECURITY_PACKAGE)
+@ComponentScan(Constants.SECURITY_PACKAGE)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Getter
     @Setter

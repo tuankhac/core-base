@@ -12,7 +12,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 
 @Configuration
 @ConfigurationProperties(prefix = CommonConstants.CONFIG_PREFIX + ".scheduler")
-@ComponentScan({Constants.Links.SCHEDULER_PACKAGE})
+@ComponentScan({Constants.SCHEDULER_PACKAGE})
 @Data
 public class SchedulerConfig {
 

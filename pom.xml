@@ -49,12 +49,19 @@
 <!--        </snapshotRepository>-->
 <!--    </distributionManagement>-->
 
-    <distributionManagement>
-        <repository>
-            <id>internal</id>
-            <url>file://${project.build.directory}/github-maven</url>
-        </repository>
-    </distributionManagement>
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>internal</id>-->
+<!--            <url>file://${project.build.directory}/github-maven</url>-->
+<!--        </repository>-->
+<!--    </distributionManagement>-->
+
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>github</id>-->
+<!--            <url>https://maven.pkg.github.com/tuankhac/core-base</url>-->
+<!--        </repository>-->
+<!--    </distributionManagement>-->
 
     <dependencies>
         <dependency>

@@ -17,7 +17,6 @@ import javax.persistence.EntityManagerFactory;
 @EnableJpaRepositories({Constants.LOGGING_PACKAGE, Constants.REPOSITORIES_PACKAGE})
 //, bootstrapMode = BootstrapMode.DEFERRED) //Constants.Links.LOGGING_PACKAGE
 public class CommonDataSourceConfig {
-    public static final String SCHEMA_DBO = "dbo";
     @Getter
     private static String secretKey;
     @Autowired

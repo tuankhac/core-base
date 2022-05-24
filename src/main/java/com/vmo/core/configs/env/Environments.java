@@ -5,7 +5,7 @@ import lombok.Getter;
 public enum Environments {
     LOCAL("Local"),
     UNIT_TEST("Unit test"),
-    DEVELOPMENT("Development"),
+    DEV("Development"),
     STAGING("Staging"),
     BETA("Beta"),
     PRODUCTION("Production");

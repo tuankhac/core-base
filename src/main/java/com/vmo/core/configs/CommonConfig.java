@@ -22,7 +22,7 @@ import org.springframework.context.annotation.Primary;
         Constants.COMMON_PACKAGE,
         Constants.FILTERS_PACKAGE,
         Constants.MODULE_PACKAGE,
-//        Constants.Links.SERVICES_PACKAGE,
+        Constants.INTEGRATION_PACKAGE,
         Constants.MANAGERS_PACKAGE,
         Constants.REPOSITORIES_PACKAGE,
 //        Constants.Links.MODELS_PACKAGE,
